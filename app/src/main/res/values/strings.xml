@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PictureGallery</string>
+    <string name="auth_title">my title</string>
+    <string name="auth_message">my massage</string>
+    <string name="example_auth_positive_button">OK</string>
+    <string name="example_auth_negative_button">Exit</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>
