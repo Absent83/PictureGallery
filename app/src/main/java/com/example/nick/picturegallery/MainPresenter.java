@@ -48,8 +48,9 @@ class MainPresenter  {
             return;
         }
 
-
         String token = tempToken;
+
+        //if (token == null || token.isEmpty()) mView.finish();
 
         YDWrap.buid(mView, token);
 
@@ -86,8 +87,10 @@ class MainPresenter  {
 
 
     public void SaveImageList(Bundle bundle, int position){
-      bundle.putSerializable("images", adapter.imageItems);
-      bundle.putInt("position", position);
+        if (adapter != null && adapter.imageItems != null) {
+            bundle.putSerializable("images", adapter.imageItems);
+            bundle.putInt("position", position);
+        }
     }
 
 

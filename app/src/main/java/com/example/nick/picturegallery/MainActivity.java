@@ -3,6 +3,7 @@ package com.example.nick.picturegallery;
 
 
 import android.app.AlertDialog;
+import android.app.Application;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.ProgressDialog;
@@ -67,20 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//    @Override
-//    public void onRestoreInstanceState(Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        // Restore UI state from the savedInstanceState.
-//        // This bundle has also been passed to onCreate.
-//        boolean myBoolean = savedInstanceState.getBoolean("MyBoolean");
-//        double myDouble = savedInstanceState.getDouble("myDouble");
-//        int myInt = savedInstanceState.getInt("MyInt");
-//        String myString = savedInstanceState.getString("MyString");
-//    }
-
-
-
-
     //region AuthDialog
     public void showAuthDialog(){
         new AuthDialog().show(getFragmentManager(), "auth");
@@ -112,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick (DialogInterface dialog, int which) {
                             dialog.dismiss();
                             getActivity().finish();
+                            //System.exit(0);
                         }
                     })
                     .create();

@@ -80,7 +80,9 @@ public class SlideshowFragment extends DialogFragment {
     };
 
     private void displayMetaInfo(int position) {
-        lblCount.setText((position + 1) + " of " + images.size());
+        int pos = position + 1;
+
+        lblCount.setText(pos + " " + getText(R.string.w_of) + " " + images.size());
 
         ImageItem image = images.get(position);
         lblTitle.setText(image.getName());

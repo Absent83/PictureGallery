@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Картинная галлерея</string>
+    <string name="auth_message">Это программа для просмотра картинок с Вашего Яндекс.Диска. Для просмотра Вам необходимо авторизоваться и предоставить разрешение.</string>
+    <string name="auth_title">Авторизация</string>
+    <string name="example_auth_positive_button">Да</string>
+    <string name="example_auth_negative_button">Отмена</string>
+    <string name="wordof">из</string>
+    <string name="w_of">из</string>
+</resources>
